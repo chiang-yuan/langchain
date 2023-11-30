@@ -155,7 +155,7 @@ class ArxivAPIWrapper(BaseModel):
         docs = [
             f"Published: {result.updated.date()}\n"
             f"Title: {result.title}\n"
-            f"arXiv ID: {result.id}\n"
+            f"arXiv ID: {result.entry_id}\n"
             f"Authors: {', '.join(a.name for a in result.authors)}\n"
             f"Summary: {result.summary}"
             for result in results
